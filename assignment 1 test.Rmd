@@ -7,6 +7,14 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(ggplot2)
+```
+
+```{r}
+hello <- c(1,2,3)
+my_name_is <- c("marie","frida", "guscode")
+df <- data.frame(hello, my_name_is)
+ggplot(df, aes(hello, my_name_is)) + geom_point()
 ```
 
 
